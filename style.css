@@ -1,0 +1,147 @@
+@font-face {
+	font-family: Norse-Bold;
+	src: url(Norse-Bold.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	background-color: #f9fafb;
+
+}
+
+.hero {
+	background-image: url("img/background.avif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	flex-grow: 1;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+
+.hero p {
+	font-size: .75rem;
+	font-weight: 300;
+	position: absolute;
+	align-self: center;
+	bottom: 1em;
+}
+
+.hero a:link, .hero a:visited {
+	color: white;
+}
+
+.content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.content p {
+	margin-top: 1em;
+	max-width: 60ch;
+}
+
+.content-container {
+	padding: 2em 3em;
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 9em;
+	margin-top: 25vh;
+	padding: 0 6em;
+	background-color: rgba(0, 0, 0, 0.45);
+}
+
+.logo-container img {
+	height: 80%;
+}
+
+.logo-container h1 {
+	font-family: Norse-Bold;
+	font-size: 6rem;
+	margin-top: 16px;
+
+}
+
+.form-container {
+	padding: 1.5em 3em;
+	background-color: white;
+	box-shadow: 3px 3px 5px rgba(182, 182, 182, 0.735);
+}
+
+.form-container p{
+	margin: 0;
+}
+.signup-form {
+	display: flex;
+	gap: 1em;
+}
+
+.form-input {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1em;
+	font-size: 1rem;
+	font-weight: 400;
+	min-width: 30ch;
+	max-width: 40ch;
+}
+
+.form-container input {
+	padding: .5em;
+}
+
+.form-container input:focus {
+	box-shadow: 3px 3px 5px rgba(182, 182, 182, 0.735);
+}
+
+.button-container {
+	padding: 2em 3em;
+}
+
+.button-container p {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 2em;
+}
+
+.button-container a {
+	font-weight: 600;
+	color: #596D48;
+	text-decoration: none;
+}
+
+.button-container a:hover {
+	color: #82a067;
+}
+
+button {
+	padding: .75em 3em;
+	background-color: #596D48;
+	border-radius: .5em;
+	border-style: none;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 500;
+	box-shadow: 3px 3px 5px rgba(182, 182, 182, 0.735);
+}
+
+button:hover {
+	background-color: #82a067;
+	cursor: pointer;
+}
