@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
     <title>Sign-up!</title>
 </head>
 <body>
@@ -25,40 +26,46 @@
 
         <div class="form-container">
             <p>Let's do this!</p>
-            <form class="signup-form" id="signup">
+            <form class="signup-form" id="form">
                 <div>
                     <div class="form-input">
                         <label for="first_name">FIRST NAME</label>
                         <input type="text" name="first_name" id="first_name">
+                        <small>Error Message</small>
                     </div>
                     <div class="form-input">
                         <label for="email">EMAIL</label>
                         <input type="email" name="email" id="email">
+                        <small>Error Message</small>
                     </div>
                     <div class="form-input">
                         <label for="pass">PASSWORD</label>
                         <input type="password" name="password" id="pass">
+                        <small>Error Message</small>
                     </div>
                 </div>
                 <div>
                     <div class="form-input">
                         <label for="last_name">LAST NAME</label>
                         <input type="text"  name="last_name" id="last_name">
+                        <small>Error Message</small>
                     </div>
                     <div class="form-input">
                         <label for="phone">PHONE NUMBER</label>
                         <input type="tel" name="phone" id="phone">
+                        <small>Error Message</small>
                     </div>
                     <div class="form-input">
                         <label for="pass_conf">CONFIRM PASSWORD</label>
                         <input type="password" name="password_conf" id="pass_conf">
+                        <small>Error Message</small>
                     </div>
                 </div>
             </form>
         </div>
 
         <div class="button-container">
-            <button type="submit" form="signup">Create Account</button>
+            <button type="submit" form="form" id="submit-button">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
